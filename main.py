@@ -21,7 +21,9 @@ def main():
     # app.register_blueprint(jobs_api2.blueprint)
     api.add_resource(users_resources.UsersResource, '/api/v2/users/<int:user_id>')
     api.add_resource(users_resources.UsersListResource, '/api/v2/users')
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
+
 
 
 if __name__ == '__main__':
