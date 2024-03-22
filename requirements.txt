@@ -1,3 +1,5 @@
 SQLAlchemy
 flask
+flask-restful
+sqlalchemy-serializer
 requests
