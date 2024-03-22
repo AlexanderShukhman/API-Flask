@@ -1,6 +1,7 @@
 from flask import Flask, make_response, jsonify, abort
 from flask_restful import reqparse, abort, Api, Resource
 from data import db_session, jobs_api2, users_resources
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
